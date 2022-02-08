@@ -81,7 +81,7 @@ void loop() {
       while (true)
       {
         analogWrite(5,0);
-        if (Serial.available() > 0)
+        if (Serial.available() > 0) 
         {
           restarted = Serial.read();
           if (restarted == 'R') // This can kill the fish but cannot restarted it, need to work on it later
